@@ -39,6 +39,7 @@ body {
     align-items: center;
     z-index: 5;
     justify-content: space-between;
+    transition: 0.3s ease-in-out;
 }
 
 .logo {
@@ -366,7 +367,7 @@ span {
 .timeline-content {
     background-color: var(--bg-color);
     border: 3px solid var(--main-color);
-    padding: 30px 50px;
+    padding: 30px 40px;
     border-radius: 4rem;
     box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
@@ -379,17 +380,17 @@ span {
 }
 
 .timeline-content h3 {
-    font-size: 20px;
+    font-size: 25px;
     color: white;
     margin: 0 0 10px;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .timeline-content p {
     color: white;
     font-size: 16px;
     font-weight: 300;
-    line-height: 22px;
+    margin-top: 20px;
 }
 
 ::-webkit-scrollbar {
@@ -654,7 +655,7 @@ this is the styles for it */
 
 @media(max-width:991px) {
     header{
-        padding: 2rem 3%
+        padding: 2rem 3%;
     }
     section {
         padding: 10rem 3% 2rem;
@@ -724,7 +725,7 @@ this is the styles for it */
         font-size: 2.6rem;
     }
     .home-content h1 {
-        font-size: 8rem;
+        font-size: 3rem;
         margin-top: 3rem;
     }
     .home-content p{
@@ -742,7 +743,7 @@ this is the styles for it */
         grid-template-columns: repeat(1,1fr);
     }
     .heading {
-        font-size: 5.5rem;
+        font-size: 4.5rem;
     }
     .testimonial-item p {
         font-size: 1.5rem;
