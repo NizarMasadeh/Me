@@ -24,3 +24,13 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
     
 }
+
+
+
+const toggleSwitch = document.getElementById('dark-mode-switch');
+
+
+toggleSwitch.addEventListener('change', function() {
+
+    document.body.classList.toggle('dark-mode');
+});

@@ -1,0 +1,44 @@
+/* Basic styling for the website */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Dark mode styles (will be applied via JavaScript) */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Styling the toggle label */
+.toggle-label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Toggle label styles in dark mode */
+input[type="checkbox"]:checked+.toggle-label {
+    background-color: #ff5722;
+    content: "Light Mode";
+}
+
+/* Change the label text when dark mode is enabled */
+input[type="checkbox"]:checked+.toggle-label::after {
+    content: " Light Mode";
+    color: #ffffff;
+}
